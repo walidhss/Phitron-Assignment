@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drink Shop</title>
+
+
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assignment.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVBAR
+    ================================================== -->
+
+    <nav class="navbar">
+
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+
+            <span>Drink Shop</span>
+
+        </div>
+
+
+
+        <!-- Navigation Links -->
+
+        <ul class="nav-links">
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Home
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="#product-container">
+
+                    <i class="fa-solid fa-shop"></i>
+
+                    Drinks
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="#group-container">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    My Group
+
+                </a>
+
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+
+
+    <!-- =================================================
+         SEARCH BAR
+    ================================================== -->
+
+    <div class="search-container">
+
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search drink by name...">
+
+
+
+        <button onclick="searchDrink()">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         MAIN CONTAINER
+    ================================================== -->
+
+    <div class="main-container">
+
+
+
+        <!-- =================================================
+             LEFT SIDE - DRINK CARDS
+        ================================================== -->
+
+        <div class="drink-section">
+
+
+            <h2>Drinks</h2>
+
+
+            <!-- Drink Cards -->
+
+            <div id="product-container">
+
+                <!-- Drink cards will be loaded here -->
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             RIGHT SIDE - GROUP / CART
+        ================================================== -->
+
+        <div class="group-container" id="group-container">
+
+
+            <!-- Total Cart -->
+
+            <h2>
+
+                Total Cart :
+
+                <span id="group-count">0</span>
+
+            </h2>
+
+
+
+            <!-- Table Heading -->
+
+            <div class="group-header">
+
+
+                <div>
+
+                    SL
+
+                </div>
+
+
+                <div>
+
+                    Img
+
+                </div>
+
+
+                <div>
+
+                    Name
+
+                </div>
+
+
+                <div>
+
+                    <!-- Empty for delete -->
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Selected Drinks -->
+
+            <div id="group-items">
+
+                <!-- Selected drinks will appear here -->
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         DETAILS MODAL
+    ================================================== -->
+
+    <div id="details-modal" class="modal">
+
+
+        <div class="modal-content">
+
+
+            <!-- Close Button -->
+
+            <span
+                class="close-btn"
+                onclick="closeModal()">
+
+                &times;
+
+            </span>
+
+
+
+            <!-- Modal Information -->
+
+            <div id="modal-body">
+
+                <!-- Drink details will appear here -->
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script src="assignment.js"></script>
+
+
+</body>
+
+</html>
